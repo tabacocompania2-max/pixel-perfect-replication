@@ -274,7 +274,7 @@ const Index = () => {
           <div style={{ marginTop: "3rem", textAlign: "center" }}>
             <h3 style={{ marginBottom: "1rem" }}>Mira por dentro exactamente cómo funciona</h3>
             <div className="video-card" style={{ maxWidth: "600px", margin: "0 auto" }}>
-              <div className="video-thumbnail" onClick={() => playVideo("https://player.vimeo.com/video/1177912788?autoplay=1")}>
+              <div className="video-thumbnail" style={{ backgroundImage: "url('https://i.vimeocdn.com/video/default-2308240_640?region=us')", backgroundSize: "cover", backgroundPosition: "center" }} onClick={() => playVideo("https://player.vimeo.com/video/1177912788?autoplay=1")}>
                 <div className="play-button">▶</div>
               </div>
               <div className="video-caption">Video completo del ebook — todas las fichas, plan de 30 días y sistema de seguimiento incluido.</div>
