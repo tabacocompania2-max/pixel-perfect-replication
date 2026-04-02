@@ -40,7 +40,7 @@ const Index = () => {
       <div className="topbar">
         <div className="lp-container">
           <div className="topbar-content">
-            <div className="logo">Lectoescritura Ya</div>
+            <div className="logo">Lectoescritura</div>
             <ul className="nav-links">
               <li><a href="#metodo" onClick={(e) => handleSmoothScroll(e, "#metodo")}>Método</a></li>
               <li><a href="#niveles" onClick={(e) => handleSmoothScroll(e, "#niveles")}>6 Niveles</a></li>
@@ -56,7 +56,7 @@ const Index = () => {
         <div className="lp-container">
           <div className="hero-content">
             <h1>
-              Si tu hijo tiene 5 o 6 años y aún no lee, <span className="highlight">esto ya es una señal de alerta</span>
+              Si tu hijo tiene de 4 a 7 años y aún no lee, <span className="highlight">esto ya es una señal de alerta</span>
             </h1>
 
             <p className="hero-subtitle">
