@@ -6,6 +6,11 @@ const scrollToCheckout = () => {
   window.location.href = CHECKOUT_URL;
 };
 
+const scrollToSection = (id: string) => {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: "smooth" });
+};
+
 const Index = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [videoSrc, setVideoSrc] = useState("");
@@ -87,16 +92,16 @@ const Index = () => {
               <li><span className="check-icon">✓</span> Más de 2,500 familias ya lo usan</li>
             </ul>
 
-            <div className="hero-image" style={{
-              background: "url('/83db4a78-19c6-433b-abe7-799bb3ae3836.webp')",
-              backgroundSize: "cover",
-              backgroundPosition: "center"
-            }} />
+            <img
+              src="/83db4a78-19c6-433b-abe7-799bb3ae3836.webp"
+              alt="Programa de lectoescritura para niños"
+              className="hero-image"
+            />
 
             <div className="price-box">
               <div className="price">$7.99</div>
               <div className="price-subtitle">Menos que una clase particular</div>
-              <button className="lp-btn lp-btn-primary price-cta" onClick={scrollToCheckout}>
+              <button className="lp-btn lp-btn-primary price-cta" onClick={() => scrollToSection("metodo")}>
                 Quiero ayudar a mi hijo hoy →
               </button>
               <div className="price-guarantees">
@@ -125,7 +130,7 @@ const Index = () => {
             <strong style={{ color: "var(--lp-text-primary)" }}>La verdad dura:</strong> Esto no mejora solo… y el tiempo sigue pasando.
           </p>
 
-          <button className="lp-btn lp-btn-primary" onClick={scrollToCheckout}>
+          <button className="lp-btn lp-btn-primary" onClick={() => scrollToSection("testimonios")}>
             No quiero que siga atrasándose →
           </button>
         </div>
@@ -442,7 +447,7 @@ const Index = () => {
               </div>
             </div>
 
-            <button className="lp-btn lp-btn-primary" onClick={scrollToCheckout} style={{ width: "100%", marginTop: "1.5rem", fontSize: "1.1rem" }}>
+            <button className="lp-btn lp-btn-primary" onClick={() => scrollToSection("garantia")} style={{ width: "100%", marginTop: "1.5rem", fontSize: "1.1rem" }}>
               Quiero todo esto por solo $7.99 →
             </button>
 
