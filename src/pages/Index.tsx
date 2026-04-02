@@ -291,10 +291,10 @@ const Index = () => {
 
           <div className="bonus-grid">
             {[
-              { title: "Actividades de refuerzo", image: "" },
-              { title: "Plan de 30 días", image: "" },
-              { title: "Seguimiento de progreso", image: "" },
-              { title: "Diploma editable", image: "" },
+              { title: "Actividades de refuerzo", image: "/bonus-1-actividades.png" },
+              { title: "Plan de 30 días", image: "/bonus-2-plan30dias.webp" },
+              { title: "Seguimiento de progreso", image: "/bonus-3-planillas.webp" },
+              { title: "Diploma editable", image: "/bonus-4-diploma.webp" },
             ].map((bonus, i) => (
               <div className="bonus-card" key={i}>
                 <div className="bonus-image" style={bonus.image ? { backgroundImage: `url('${bonus.image}')` } : {}}></div>
