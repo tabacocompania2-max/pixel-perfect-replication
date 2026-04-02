@@ -2,8 +2,11 @@ import { useState, useCallback, useEffect } from "react";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
-const scrollToCheckout = () => {
-  window.location.href = CHECKOUT_URL;
+const scrollToVideos = () => {
+  const el = document.getElementById("videos");
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 };
 
 const Index = () => {
@@ -96,8 +99,8 @@ const Index = () => {
             <div className="price-box">
               <div className="price">$7.99</div>
               <div className="price-subtitle">Menos que una clase particular</div>
-              <button className="lp-btn lp-btn-primary price-cta" onClick={scrollToCheckout}>
-                Quiero ayudar a mi hijo hoy →
+              <button className="lp-btn lp-btn-primary price-cta" onClick={scrollToVideos}
+                Mira cómo funciona en 2 minutos →
               </button>
               <div className="price-guarantees">
                 <div className="guarantee-item">⚡ Acceso inmediato</div>
@@ -125,7 +128,7 @@ const Index = () => {
             <strong style={{ color: "var(--lp-text-primary)" }}>La verdad dura:</strong> Esto no mejora solo… y el tiempo sigue pasando.
           </p>
 
-          <button className="lp-btn lp-btn-primary" onClick={scrollToCheckout}>
+          <button className="lp-btn lp-btn-primary" onClick={scrollToVideos}
             No quiero que siga atrasándose →
           </button>
         </div>
@@ -255,7 +258,7 @@ const Index = () => {
       </section>
 
       {/* Videos */}
-      <section className="section-videos">
+      <section className="section-videos" id="videos">
         <div className="lp-container">
           <h2>Mira el método en acción</h2>
           <p className="videos-subtitle">Familias reales usando el programa con sus hijos. Resultados comprobados.</p>
