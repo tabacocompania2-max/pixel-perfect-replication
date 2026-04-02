@@ -257,14 +257,14 @@ const Index = () => {
 
           <div className="videos-grid">
             <div className="video-card">
-              <div className="video-thumbnail" onClick={() => playVideo("https://player.vimeo.com/video/1177900310?autoplay=1")}>
+              <div className="video-thumbnail" style={{ backgroundImage: "url('https://i.vimeocdn.com/video/2139349074-045ce919fdaa5480d392d8d3ac62cc41fbf4ea76d2e71552897311ff18b10af0-d_640?region=us')", backgroundSize: "cover", backgroundPosition: "center" }} onClick={() => playVideo("https://player.vimeo.com/video/1177900310?autoplay=1")}>
                 <div className="play-button">▶</div>
               </div>
               <div className="video-caption">Padres e hijos practicando juntos — en pocos minutos al día, los avances son reales.</div>
             </div>
 
             <div className="video-card">
-              <div className="video-thumbnail" onClick={() => playVideo("https://player.vimeo.com/video/1177900287?autoplay=1")}>
+              <div className="video-thumbnail" style={{ backgroundImage: "url('https://i.vimeocdn.com/video/2139349494-7d73d8d4017b22326172a67e4fb063c99a1a28ff7ca329e22a0f85b35f2da74c-d_640?region=us')", backgroundSize: "cover", backgroundPosition: "center" }} onClick={() => playVideo("https://player.vimeo.com/video/1177900287?autoplay=1")}>
                 <div className="play-button">▶</div>
               </div>
               <div className="video-caption">Resultados reales — mira el progreso después de usar el programa.</div>
