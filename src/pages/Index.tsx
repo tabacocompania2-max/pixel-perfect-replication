@@ -5,6 +5,12 @@ const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 const scrollToCheckout = () => {
   window.location.href = CHECKOUT_URL;
 };
+const scrollToVideos = () => {
+  const el = document.querySelector("#videos");
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 const Index = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -125,9 +131,9 @@ const Index = () => {
             <strong style={{ color: "var(--lp-text-primary)" }}>La verdad dura:</strong> Esto no mejora solo… y el tiempo sigue pasando.
           </p>
 
-          <button className="lp-btn lp-btn-primary" onClick={scrollToCheckout}>
-            No quiero que siga atrasándose →
-          </button>
+          <button className="lp-btn lp-btn-primary" onClick={scrollToVideos}>
+  Ver el método en acción →
+</button>
         </div>
       </section>
 
@@ -255,7 +261,7 @@ const Index = () => {
       </section>
 
       {/* Videos */}
-      <section className="section-videos">
+      <section className="section-videos" id="videos">
         <div className="lp-container">
           <h2>Mira el método en acción</h2>
           <p className="videos-subtitle">Familias reales usando el programa con sus hijos. Resultados comprobados.</p>
@@ -498,9 +504,9 @@ const Index = () => {
               ⏰ Oferta disponible por tiempo limitado
             </div>
 
-            <button className="lp-btn lp-btn-primary" onClick={scrollToCheckout} style={{ width: "100%", marginBottom: "1.5rem" }}>
-              Quiero ayudar a mi hijo hoy →
-            </button>
+            <button className="lp-btn lp-btn-primary price-cta" onClick={scrollToVideos}>
+  Mira cómo funciona en 2 minutos →
+</button>
 
             <div className="price-guarantees">
               <div className="guarantee-item">⚡ Acceso inmediato</div>
