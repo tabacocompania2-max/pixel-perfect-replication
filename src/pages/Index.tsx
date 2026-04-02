@@ -83,7 +83,7 @@ const Index = () => {
             </ul>
 
             <div className="hero-image" style={{
-              background: `url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><rect fill=%22%23f0f4f8%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22100%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 font-size=%2224%22 fill=%22%236b7280%22>Ebook Visual</text></svg>')`,
+              background: "url('/83db4a78-19c6-433b-abe7-799bb3ae3836.webp')",
               backgroundSize: "cover",
               backgroundPosition: "center"
             }} />
