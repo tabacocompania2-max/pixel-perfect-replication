@@ -36,6 +36,11 @@ const Index = () => {
 
   return (
     <>
+      {/* Announcement Banner */}
+      <div className="announcement-banner">
+        🔥 Inscripciones abiertas por tiempo limitado
+      </div>
+
       {/* Top Bar */}
       <div className="topbar">
         <div className="lp-container">
@@ -372,7 +377,84 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Guarantee Section */}
+      {/* Value Stack - Hormozi Style */}
+      <section className="section-value-stack">
+        <div className="lp-container">
+          <h2>Esto es TODO lo que recibes hoy</h2>
+          <p className="value-stack-subtitle">Resumen completo de lo que incluye tu compra</p>
+
+          <div className="value-stack-box">
+            <div className="value-stack-item">
+              <div className="value-stack-check">✅</div>
+              <div className="value-stack-details">
+                <span className="value-stack-name">Programa completo de Lectoescritura (6 niveles)</span>
+                <span className="value-stack-desc">El sistema paso a paso para que tu hijo lea en 30 días</span>
+              </div>
+              <span className="value-stack-price">$47</span>
+            </div>
+
+            <div className="value-stack-item">
+              <div className="value-stack-check">✅</div>
+              <div className="value-stack-details">
+                <span className="value-stack-name">🎁 BONO: Actividades de refuerzo</span>
+                <span className="value-stack-desc">Ejercicios extra para consolidar cada nivel</span>
+              </div>
+              <span className="value-stack-price">$15</span>
+            </div>
+
+            <div className="value-stack-item">
+              <div className="value-stack-check">✅</div>
+              <div className="value-stack-details">
+                <span className="value-stack-name">🎁 BONO: Plan de 30 días</span>
+                <span className="value-stack-desc">Exactamente qué hacer cada día, sin improvisar</span>
+              </div>
+              <span className="value-stack-price">$20</span>
+            </div>
+
+            <div className="value-stack-item">
+              <div className="value-stack-check">✅</div>
+              <div className="value-stack-details">
+                <span className="value-stack-name">🎁 BONO: Planillas de seguimiento</span>
+                <span className="value-stack-desc">Mide el progreso de tu hijo semana a semana</span>
+              </div>
+              <span className="value-stack-price">$10</span>
+            </div>
+
+            <div className="value-stack-item">
+              <div className="value-stack-check">✅</div>
+              <div className="value-stack-details">
+                <span className="value-stack-name">🎁 BONO: Diploma editable</span>
+                <span className="value-stack-desc">Celebra el logro de tu hijo con un diploma personalizado</span>
+              </div>
+              <span className="value-stack-price">$5</span>
+            </div>
+
+            <div className="value-stack-divider" />
+
+            <div className="value-stack-total">
+              <div>
+                <span className="value-stack-total-label">Valor total: </span>
+                <span className="value-stack-total-original">$97</span>
+              </div>
+              <div className="value-stack-today">
+                <span>Hoy solo pagas: </span>
+                <span className="value-stack-today-price">$7.99</span>
+              </div>
+            </div>
+
+            <button className="lp-btn lp-btn-primary" onClick={scrollToCheckout} style={{ width: "100%", marginTop: "1.5rem", fontSize: "1.1rem" }}>
+              Quiero todo esto por solo $7.99 →
+            </button>
+
+            <div className="price-guarantees" style={{ marginTop: "1rem" }}>
+              <div className="guarantee-item">⚡ Acceso inmediato</div>
+              <div className="guarantee-item">🛡️ Garantía 7 días</div>
+              <div className="guarantee-item">🔒 Pago seguro</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section-guarantee" id="garantia">
         <div className="lp-container">
           <div className="guarantee-icon-large">🛡️</div>

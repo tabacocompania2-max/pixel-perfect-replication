@@ -113,6 +113,17 @@
   50% { transform: scale(1.02); }
 }
 
+/* Announcement Banner */
+.announcement-banner {
+  background: var(--lp-danger);
+  color: white;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+
 /* Top Bar */
 .topbar {
   background: white;
@@ -916,6 +927,115 @@
   border: none;
 }
 
+/* Value Stack - Hormozi Style */
+.section-value-stack {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, rgba(255, 127, 80, 0.08), rgba(22, 163, 74, 0.05));
+}
+
+.section-value-stack h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.value-stack-subtitle {
+  text-align: center;
+  color: var(--lp-text-secondary);
+  margin-bottom: 2rem;
+}
+
+.value-stack-box {
+  max-width: 650px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 2px solid var(--lp-primary);
+  box-shadow: 0 20px 60px -15px rgba(255, 127, 80, 0.2);
+}
+
+.value-stack-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.value-stack-item:last-of-type {
+  border-bottom: none;
+}
+
+.value-stack-check {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.value-stack-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.value-stack-name {
+  font-weight: 600;
+  color: var(--lp-text-primary);
+  font-size: 0.95rem;
+}
+
+.value-stack-desc {
+  font-size: 0.8rem;
+  color: var(--lp-text-secondary);
+}
+
+.value-stack-price {
+  font-weight: 700;
+  color: var(--lp-text-secondary);
+  text-decoration: line-through;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.value-stack-divider {
+  height: 2px;
+  background: var(--lp-primary);
+  margin: 1rem 0;
+}
+
+.value-stack-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.value-stack-total-label {
+  color: var(--lp-text-secondary);
+  font-size: 1rem;
+}
+
+.value-stack-total-original {
+  text-decoration: line-through;
+  color: var(--lp-danger);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.value-stack-today {
+  font-size: 1rem;
+  color: var(--lp-text-primary);
+  font-weight: 600;
+}
+
+.value-stack-today-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--lp-secondary);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero h1 {
@@ -939,5 +1059,16 @@
   }
   .final-price {
     font-size: 2.5rem;
+  }
+  .hero-image {
+    height: auto;
+    aspect-ratio: 4/5;
+    max-width: 100%;
+  }
+  .value-stack-item {
+    flex-wrap: wrap;
+  }
+  .value-stack-price {
+    margin-left: auto;
   }
 }
