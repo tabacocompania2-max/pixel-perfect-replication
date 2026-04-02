@@ -113,6 +113,17 @@
   50% { transform: scale(1.02); }
 }
 
+/* Announcement Banner */
+.announcement-banner {
+  background: var(--lp-danger);
+  color: white;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+
 /* Top Bar */
 .topbar {
   background: white;
