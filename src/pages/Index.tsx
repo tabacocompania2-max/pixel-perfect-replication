@@ -40,7 +40,7 @@ const Index = () => {
       <div className="topbar">
         <div className="lp-container">
           <div className="topbar-content">
-            <div className="logo">Lectoescritura Ya</div>
+            <div className="logo">Lectoescritura</div>
             <ul className="nav-links">
               <li><a href="#metodo" onClick={(e) => handleSmoothScroll(e, "#metodo")}>Método</a></li>
               <li><a href="#niveles" onClick={(e) => handleSmoothScroll(e, "#niveles")}>6 Niveles</a></li>
