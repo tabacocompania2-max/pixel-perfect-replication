@@ -290,10 +290,15 @@ const Index = () => {
           <h2>Además, hoy recibes GRATIS</h2>
 
           <div className="bonus-grid">
-            {["Actividades de refuerzo", "Plan de 30 días", "Seguimiento de progreso", "Diploma editable"].map((title, i) => (
+            {[
+              { title: "Actividades de refuerzo", image: "" },
+              { title: "Plan de 30 días", image: "" },
+              { title: "Seguimiento de progreso", image: "" },
+              { title: "Diploma editable", image: "" },
+            ].map((bonus, i) => (
               <div className="bonus-card" key={i}>
-                <div className="bonus-image"></div>
-                <div className="bonus-title-text">{title}</div>
+                <div className="bonus-image" style={bonus.image ? { backgroundImage: `url('${bonus.image}')` } : {}}></div>
+                <div className="bonus-title-text">{bonus.title}</div>
               </div>
             ))}
           </div>

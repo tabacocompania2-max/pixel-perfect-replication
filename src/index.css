@@ -229,8 +229,9 @@
 }
 
 .hero-image {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
   margin: 2rem auto;
   border-radius: 1rem;
   background: var(--lp-bg-light);
@@ -650,7 +651,9 @@
 .bonus-image {
   width: 100%;
   height: 200px;
-  background: var(--lp-bg-light);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--lp-bg-light);
 }
 
 .bonus-title-text {
