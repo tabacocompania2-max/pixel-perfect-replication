@@ -311,7 +311,7 @@ const Index = () => {
               { title: "Diploma editable", image: "/bonus-4-diploma.webp" },
             ].map((bonus, i) => (
               <div className="bonus-card" key={i}>
-                <div className="bonus-image" style={bonus.image ? { backgroundImage: `url('${bonus.image}')` } : {}}></div>
+                <img className="bonus-image" src={bonus.image} alt={bonus.title} loading="lazy" decoding="async" width="200" height="200" />
                 <div className="bonus-title-text">{bonus.title}</div>
               </div>
             ))}
