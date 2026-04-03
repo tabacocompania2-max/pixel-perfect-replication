@@ -96,6 +96,10 @@ const Index = () => {
               src="/83db4a78-19c6-433b-abe7-799bb3ae3836.webp"
               alt="Programa de lectoescritura para niños"
               className="hero-image"
+              loading="eager"
+              decoding="async"
+              width="500"
+              height="400"
             />
 
             <div className="price-box">
