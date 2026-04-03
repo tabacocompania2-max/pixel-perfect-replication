@@ -96,6 +96,10 @@ const Index = () => {
               src="/83db4a78-19c6-433b-abe7-799bb3ae3836.webp"
               alt="Programa de lectoescritura para niños"
               className="hero-image"
+              loading="eager"
+              decoding="async"
+              width="500"
+              height="400"
             />
 
             <div className="price-box">
@@ -284,7 +288,7 @@ const Index = () => {
           <div style={{ marginTop: "3rem", textAlign: "center" }}>
             <h3 style={{ marginBottom: "1rem" }}>Mira por dentro exactamente cómo funciona</h3>
             <div className="video-card" style={{ maxWidth: "600px", margin: "0 auto" }}>
-              <div className="video-thumbnail" style={{ backgroundImage: "url('/video-thumb-3.png')", backgroundSize: "cover", backgroundPosition: "center" }} onClick={() => playVideo("https://player.vimeo.com/video/1177912788?autoplay=1")}>
+              <div className="video-thumbnail" style={{ backgroundImage: "url('/video-thumb-3.webp')", backgroundSize: "cover", backgroundPosition: "center" }} onClick={() => playVideo("https://player.vimeo.com/video/1177912788?autoplay=1")}>
                 <div className="play-button">▶</div>
               </div>
               <div className="video-caption">Video completo del ebook — todas las fichas, plan de 30 días y sistema de seguimiento incluido.</div>
@@ -301,13 +305,13 @@ const Index = () => {
 
           <div className="bonus-grid">
             {[
-              { title: "Actividades de refuerzo", image: "/bonus-1-actividades.png" },
+              { title: "Actividades de refuerzo", image: "/bonus-1-actividades.webp" },
               { title: "Plan de 30 días", image: "/bonus-2-plan30dias.webp" },
               { title: "Seguimiento de progreso", image: "/bonus-3-planillas.webp" },
               { title: "Diploma editable", image: "/bonus-4-diploma.webp" },
             ].map((bonus, i) => (
               <div className="bonus-card" key={i}>
-                <div className="bonus-image" style={bonus.image ? { backgroundImage: `url('${bonus.image}')` } : {}}></div>
+                <img className="bonus-image" src={bonus.image} alt={bonus.title} loading="lazy" decoding="async" width="200" height="200" />
                 <div className="bonus-title-text">{bonus.title}</div>
               </div>
             ))}
