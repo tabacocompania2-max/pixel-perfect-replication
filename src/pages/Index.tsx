@@ -324,7 +324,7 @@ const Index = () => {
         <div className="lp-container">
           <div className="credibility-card">
             <div className="credibility-avatar">👨‍🏫</div>
-            <div className="credibility-name">Creado por [Tu Nombre]</div>
+            <div className="credibility-name">Creado por la Dra. Valentina Gómez</div>
             <div className="credibility-title">Logopeda Certificado | Especialista en Lectoescritura</div>
 
             <div className="credibility-stats">
