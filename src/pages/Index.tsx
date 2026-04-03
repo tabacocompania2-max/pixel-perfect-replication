@@ -305,7 +305,7 @@ const Index = () => {
 
           <div className="bonus-grid">
             {[
-              { title: "Actividades de refuerzo", image: "/bonus-1-actividades.png" },
+              { title: "Actividades de refuerzo", image: "/bonus-1-actividades.webp" },
               { title: "Plan de 30 días", image: "/bonus-2-plan30dias.webp" },
               { title: "Seguimiento de progreso", image: "/bonus-3-planillas.webp" },
               { title: "Diploma editable", image: "/bonus-4-diploma.webp" },
